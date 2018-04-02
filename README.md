@@ -21,3 +21,6 @@ docker run -e "VIRTUAL_HOST=somedomain.com" -e "LETSENCRYPT_HOST=somedomain.com"
 Not proxying signals prevents apache2 from dying when the terminal is resized [sigwinch], only useful if the container is attached.
 Naturally running containers attached to a terminal is unnecessary and even abnormal.
 --rm prevents the container's data persisting after the container is stopped (externally mounted volumes are unaffected).
+
+Chunks of the Dockerfile were bastardised from jrottenberg's FFMpeg image : https://github.com/jrottenberg/ffmpeg
+(Thank you jrottenberg!)
